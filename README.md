@@ -1,4 +1,4 @@
-# A simple calculator made with Angular v19
+# A simple calculator made with Angular 19
 
 A simple, but yet beautiful calculator made with Angular and much love.
 
