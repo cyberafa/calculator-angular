@@ -34,3 +34,17 @@
     display: none;
   }
 }
+
+@media (max-width: 600px) {
+  .calcTitle {
+    font-size: 1.8em;
+  }
+
+  .calcVisorInputs {
+    font-size: 1em;
+  }
+
+  .calcVisorPreview {
+    font-size: 0.8em;
+  }
+}
