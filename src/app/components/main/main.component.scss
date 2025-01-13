@@ -1,0 +1,152 @@
+.calcTitle {
+  color: #ffffff;
+  font-family: Inter;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.calcVisor {
+  background-color: #f9f7f7;
+  display: block;
+  border-radius: 1em;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em 1em;
+}
+
+.calcVisorInputs {
+  color: #333233;
+  font-size: 1.2em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.calcVisorPreview {
+  font-size: 1em;
+  color: #333233;
+  opacity: 0.3;
+
+  &.disabled {
+    display: none;
+  }
+}
+
+.calcButton {
+  background-color: #ffffff;
+  font-size: 2.1em;
+  color: #333233;
+  border: none;
+  border-radius: 1000px;
+  aspect-ratio: 1;
+  padding: 0.5em;
+  transition: 300ms all;
+}
+
+.calcButton:hover {
+  cursor: pointer;
+  background-color: #d2ced2;
+}
+
+.highlighted {
+  background-color: #333233;
+  color: #fff;
+}
+
+/* grid */
+
+.inputs {
+  margin-top: 1em;
+  display: grid;
+  grid-gap: 0.7em;
+  grid-template-areas:
+    "clear clearChar div mult"
+    "num7 num8 num9 minus"
+    "num4 num5 num6 more"
+    "num1 num2 num3 equals"
+    "num0 num0 numDot equals";
+  grid-auto-columns: max-content;
+}
+
+.numC {
+  grid-area: clear;
+}
+
+.numSlice {
+  grid-area: clearChar;
+}
+
+.numDiv {
+  grid-area: div;
+}
+
+.numMult {
+  grid-area: mult;
+}
+
+.num7 {
+  grid-area: num7;
+}
+
+.num8 {
+  grid-area: num8;
+}
+
+.num9 {
+  grid-area: num9;
+}
+
+.numMinus {
+  grid-area: minus;
+}
+
+.num4 {
+  grid-area: num4;
+}
+
+.num5 {
+  grid-area: num5;
+}
+
+.num6 {
+  grid-area: num6;
+}
+
+.numMore {
+  grid-area: more;
+}
+
+.num1 {
+  grid-area: num1;
+}
+
+.num2 {
+  grid-area: num2;
+}
+
+.num3 {
+  grid-area: num3;
+}
+
+.numEquals {
+  grid-area: equals;
+  aspect-ratio: unset;
+  background-color: #333233;
+  transition: 300ms all;
+  color: #fff;
+
+  &:hover {
+    background-color: #757575;
+    color: #fff;
+  }
+}
+
+.num0 {
+  grid-area: num0;
+  aspect-ratio: unset;
+}
+
+.numDot {
+  grid-area: numDot;
+}

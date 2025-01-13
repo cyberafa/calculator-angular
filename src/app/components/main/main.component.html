@@ -1,0 +1,12 @@
+<div class="inputs">
+  @for(item of interfaceButtons(); track item; let i = $index){
+  <input
+    type="button"
+    [classList]="
+      interfaceButtons()[i].classList + interfaceButtons()[i].highlighted
+    "
+    [value]="interfaceButtons()[i].value"
+    (click)="buttonClick(interfaceButtons()[i].value, i)"
+  />
+  }
+</div>

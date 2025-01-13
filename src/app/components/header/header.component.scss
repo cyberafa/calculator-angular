@@ -1,0 +1,36 @@
+.calcTitle {
+  color: #ffffff;
+  font-family: Inter;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.calcVisor {
+  background-color: #f9f7f7;
+  display: block;
+  border-radius: 1em;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em 1em;
+}
+
+.calcVisorInputs {
+  color: #333233;
+  font-family: Inter;
+  font-size: 1.2em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.calcVisorPreview {
+  font-size: 1em;
+  font-family: Inter;
+  color: #333233;
+  opacity: 0.3;
+
+  &.disabled {
+    display: none;
+  }
+}
